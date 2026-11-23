@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta name="theme-color" content="#132c4b" />
+<title>مِداد | مدرّب تحسين الخط العربي</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Noto+Naskh+Arabic:wght@400;600;700&family=Aref+Ruqaa:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#152d4b;--navy2:#213e60;--gold:#eebc36;--pale:#fff2c8;--cream:#fcfaf4;--paper:#fffdf9;--line:#e8e1d6;--ink:#243448;--muted:#617081;--success:#247c64;--danger:#b44845;--shadow:0 13px 40px rgba(27,48,68,.08);font-family:'IBM Plex Sans Arabic',Tahoma,Arial,sans-serif}
+*{box-sizing:border-box}body{margin:0;color:var(--ink);background:var(--cream);min-height:100vh}button,input,select{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible{outline:3px solid #b8880e;outline-offset:2px}button:disabled{opacity:.4;cursor:not-allowed}h1,h2,h3,p{margin:0}button{touch-action:manipulation}a{color:inherit}
+.app{min-height:100vh;display:grid;grid-template-columns:248px minmax(0,1fr)}aside{background:var(--navy);color:#fff;padding:24px 17px;position:sticky;top:0;height:100vh;display:flex;flex-direction:column;gap:30px}.brand{display:flex;gap:10px;align-items:center;padding:2px 10px}.logo{height:43px;width:43px;background:var(--gold);border-radius:14px;display:grid;place-items:center;color:var(--navy);font-size:26px;font-family:serif}.brand strong{display:block;font-size:26px;line-height:1.4}.brand small{color:#d2dbe8;font-size:11px}.nav{display:grid;gap:9px}.nav button{border:none;background:transparent;color:#d8e1e9;display:flex;gap:10px;align-items:center;text-align:right;padding:12px 15px;border-radius:12px;font-weight:600;font-size:14px}.nav button.active,.nav button:hover{background:#35516d;color:#fff}.nav button.active{box-shadow:inset -4px 0 0 var(--gold)}.asidefoot{margin-top:auto;padding:18px 10px;font-size:12px;line-height:2;color:#ced8e4;border-top:1px solid #ffffff20}.asidefoot em{color:#ffe3a0;font-style:normal}
+main{min-width:0;padding:30px clamp(18px,4vw,52px) 80px;max-width:1400px;width:100%;margin:auto}.top{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:26px}.eyebrow{color:#b37e0a;font-size:13px;font-weight:700;letter-spacing:.2px}.top h1{font-size:clamp(22px,3vw,32px);line-height:1.5}.top p{color:var(--muted);font-size:14px}.pill{display:inline-flex;align-items:center;gap:7px;border-radius:99px;background:#fff;border:1px solid var(--line);padding:9px 13px;color:var(--navy);font-size:12px;white-space:nowrap}.hero{background:linear-gradient(119deg,#142c4a,#284a6b);padding:30px;border-radius:22px;box-shadow:var(--shadow);color:white;position:relative;overflow:hidden;min-height:200px;display:flex;align-items:center;justify-content:space-between;gap:15px}.hero:before,.hero:after{content:' ';position:absolute;border:1px solid #ffffff20;border-radius:50%;width:290px;height:290px;left:-65px;top:-185px}.hero:after{width:440px;height:440px;left:-140px;top:-265px}.hero h2{font-size:clamp(23px,3vw,36px);line-height:1.6}.hero p{color:#e4eaf2;font-size:14px;max-width:540px;line-height:2}.hero .quill{font-size:80px;opacity:.8;line-height:1}.actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:21px}.btn{border:1px solid transparent;border-radius:11px;min-height:43px;padding:9px 17px;font-size:14px;font-weight:700;display:inline-flex;gap:8px;align-items:center;justify-content:center}.primary{background:var(--navy);color:white}.gold{background:var(--gold);color:var(--navy)}.outline{background:white;color:var(--navy);border-color:var(--line)}.soft{background:#fff7e2;color:#71510a;border-color:#ffebba}.danger{color:var(--danger)}.btn:hover:not(:disabled){filter:brightness(.97)}.grid2{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(250px,1fr);gap:18px}.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:18px 0}.stat{background:white;border:1px solid var(--line);border-radius:16px;padding:18px}.stat small{display:block;color:var(--muted);font-size:12px}.stat strong{font-size:28px;color:var(--navy);display:block}.card{border:1px solid var(--line);background:#fff;border-radius:18px;padding:22px;box-shadow:var(--shadow);margin-top:18px}.sectionTitle{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:17px;flex-wrap:wrap}.sectionTitle h2{font-size:19px}.sub{color:var(--muted);font-size:13px;line-height:1.9}.progress{height:9px;border-radius:20px;background:#eceef0;overflow:hidden;margin:12px 0}.progress i{display:block;height:100%;background:var(--gold);border-radius:20px;transition:width .2s}.tags{display:flex;gap:8px;flex-wrap:wrap}.tag{font-size:12px;border-radius:9px;background:#f5f7f9;color:#37516d;padding:7px 10px}.lessons{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}.lesson{border:1px solid var(--line);padding:15px;border-radius:14px;background:#fff;display:flex;flex-direction:column;gap:8px;min-height:132px;text-align:right;cursor:pointer}.lesson:hover{border-color:#b4a079;background:#fffdf7}.lesson .sample{font-family:'Noto Naskh Arabic','Traditional Arabic',serif;font-size:26px;color:var(--navy);min-height:30px}.lesson b{font-size:15px}.lesson .meta{font-size:12px;color:var(--muted)}.lesson.done{border-color:#aad6c4;background:#f8fffb}.lesson .doneBadge{color:var(--success);font-size:11px;font-weight:700}.toolbar{display:flex;justify-content:space-between;gap:11px;flex-wrap:wrap;align-items:center;margin-bottom:17px}.tabs{display:flex;gap:5px;border-radius:12px;background:#edf0f2;padding:4px}.tabs button{padding:9px 16px;border-radius:9px;background:transparent;border:none;color:var(--muted);font-size:13px;font-weight:700}.tabs button.on{background:white;color:var(--navy);box-shadow:0 1px 8px #00000010}.field{display:flex;gap:7px;align-items:center;font-size:12px;color:var(--muted)}.field input[type=range]{accent-color:var(--navy);width:95px}.field input[type=color]{width:30px;height:29px;border:0;background:none;padding:0;cursor:pointer}.field select{background:white;border:1px solid var(--line);border-radius:9px;color:var(--navy);padding:7px}.instruction{border-right:4px solid var(--gold);background:#fffbef;padding:15px 18px;border-radius:12px;margin-bottom:15px;line-height:1.9;font-size:14px}.instruction strong{display:block;color:var(--navy)}.workspace{border:2px solid #dcd3c4;border-radius:15px;overflow:hidden;background:var(--paper);position:relative}.canvasArea{height:370px;position:relative;overflow:hidden}.ruleGuides{position:absolute;inset:0;pointer-events:none;background:repeating-linear-gradient(to bottom,transparent 0px,transparent 71px,#cfd8e1 72px,#cfd8e1 73px,transparent 74px,transparent 108px);opacity:.65}.guideText{position:absolute;top:0;left:0;right:0;bottom:0;pointer-events:none;display:flex;align-items:center;justify-content:center;white-space:pre-wrap;text-align:center;direction:rtl;line-height:1.9;color:var(--navy);font-family:'Noto Naskh Arabic','Traditional Arabic',serif;padding:20px}.guideText.ruqaa{font-family:'Aref Ruqaa','Traditional Arabic',serif}.pattern{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}.draw{position:absolute;inset:0;width:100%;height:100%;touch-action:none;cursor:crosshair;user-select:none}.model{border:1px solid var(--line);background:#fffdf6;border-radius:12px;min-height:84px;display:flex;align-items:center;justify-content:center;text-align:center;padding:6px 12px;margin-bottom:12px;font-family:'Noto Naskh Arabic','Traditional Arabic',serif;font-size:clamp(28px,4vw,48px);line-height:1.6}.model.ruqaa{font-family:'Aref Ruqaa','Traditional Arabic',serif}.boardFooter{background:#f8f7f3;padding:12px 15px;display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap;border-top:1px solid var(--line)}.asideTips ul{padding-right:19px;line-height:2.2;font-size:13px;margin:8px 0;color:#34475a}.num{background:var(--pale);color:#76530c;width:30px;height:30px;display:inline-grid;place-items:center;border-radius:50%;font-weight:700;flex-shrink:0}.steps{display:grid;gap:14px}.step{display:flex;gap:12px;align-items:flex-start}.step strong{font-size:14px}.step p{font-size:12px;color:var(--muted);line-height:1.8}.ratings{display:grid;gap:12px}.rating{display:grid;grid-template-columns:minmax(120px,1fr) auto;align-items:center;gap:8px}.stars{display:flex;gap:4px}.stars button{width:32px;height:33px;border:1px solid var(--line);background:#fff;border-radius:8px;color:#7b8490}.stars button.selected{background:var(--gold);color:var(--navy);border-color:#d3a225}.daygrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}.day{background:#fff;padding:18px;border:1px solid var(--line);border-radius:14px;text-align:right}.day.today{border-color:#d7b454;background:#fffdf4}.day.complete{border-color:#aed7c8;background:#f8fffc}.day small{color:var(--muted)}.day h3{font-size:16px;margin:7px 0}.day .daymeta{color:var(--muted);font-size:12px}.bargraph{height:180px;display:flex;gap:8px;align-items:end;border-bottom:1px solid var(--line);padding:10px 4px}.barcol{flex:1;display:flex;align-items:center;flex-direction:column;justify-content:end;height:100%;gap:5px;min-width:20px}.bar{width:100%;max-width:32px;background:linear-gradient(180deg,var(--gold),#c99823);border-radius:6px 6px 0 0;min-height:4px}.barcol small{font-size:9px;color:var(--muted);white-space:nowrap}.empty{padding:28px;border:1px dashed #c6cdd4;border-radius:12px;background:#fafbfc;text-align:center;color:var(--muted);line-height:2;font-size:14px}.chartrow{display:flex;align-items:center;gap:11px;margin:13px 0}.chartrow span{min-width:115px;font-size:12px}.chartrow .progress{flex:1;margin:0}.chartrow b{min-width:29px;font-size:12px}.mobileNav{display:none}.toast{position:fixed;bottom:24px;left:24px;background:var(--navy);color:#fff;border-radius:11px;padding:12px 17px;font-size:13px;box-shadow:var(--shadow);z-index:10;display:none}.toast.show{display:block}.hide{display:none!important}
+@media(max-width:980px){.app{grid-template-columns:1fr}aside{display:none}main{padding:20px 16px 105px}.grid2{grid-template-columns:1fr}.mobileNav{display:flex;position:fixed;bottom:0;left:0;right:0;background:white;border-top:1px solid var(--line);justify-content:space-around;z-index:9;padding:7px 5px max(8px,env(safe-area-inset-bottom))}.mobileNav button{border:none;background:transparent;color:#526476;font-size:11px;display:flex;flex-direction:column;align-items:center;padding:6px 12px;gap:2px}.mobileNav button.active{color:#aa7b0b;font-weight:700}.mobileNav button span{font-size:18px}}
+@media(max-width:560px){.top{align-items:flex-start}.top .pill{display:none}.hero{padding:22px}.hero .quill{display:none}.stats{gap:8px}.stat{padding:14px 10px}.stat strong{font-size:24px}.card{padding:16px}.canvasArea{height:320px}.rating{grid-template-columns:1fr}.toolbar{gap:10px}.tabs{width:100%}.tabs button{flex:1}.boardFooter .btn{flex:1}.field input[type=range]{width:70px}}
+
+/* المسارات الثلاثة: الوضوح والجمال والسرعة المتزنة */
+.triad-head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:24px;margin-bottom:12px}
+.triad-head h2{font-size:21px;color:var(--navy)}
+.triad-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.triad-item{padding:19px 17px;border:1px solid var(--line);border-radius:17px;background:white;min-width:0;box-shadow:var(--shadow)}
+.triad-item .triad-top{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.triad-symbol{height:39px;width:39px;display:inline-grid;place-items:center;border-radius:12px;background:var(--pale);font-size:21px;color:var(--navy)}
+.triad-item h3{font-size:18px;color:var(--navy);margin:10px 0 2px}
+.triad-item p{font-size:12px;color:var(--muted);line-height:1.9;min-height:46px}
+.triad-item .triad-value{font-size:23px;font-weight:700;color:var(--navy);margin-top:10px}
+.triad-item .triad-note{font-size:11px;color:var(--muted);margin-top:5px}
+.triad-item .triad-value small{font-size:13px;font-weight:500}
+.phase-banner{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;align-items:center;border-radius:13px;padding:14px 16px;background:#fff8e8;border:1px solid #f3dca6;margin:16px 0}
+.phase-banner b{color:var(--navy)}
+.phase-banner .sub{font-size:12px}
+.phase-label{display:inline-block;font-size:11px;font-weight:700;color:#76510d;background:#fff2ca;border-radius:20px;padding:4px 10px;margin:5px 0}
+.day .phase-label{margin:4px 0 8px}
+.speed-box{border:1px solid #dac994;background:#fffcf2;border-radius:15px;padding:17px;margin:18px 0 0}
+.speed-box h3{font-size:18px;color:var(--navy);margin-bottom:5px}
+.speed-box .speed-time{font-variant-numeric:tabular-nums;font-size:27px;font-weight:700;color:var(--navy);background:white;border:1px solid #f1e0b7;padding:5px 14px;border-radius:10px;min-width:95px;display:inline-block;text-align:center;direction:ltr}
+.speed-box .actions{margin-top:11px}
+.speed-box .speed-confirm{display:flex;align-items:center;gap:10px;margin-top:12px;line-height:1.8;cursor:pointer;font-size:13px}
+.speed-box .speed-confirm input{height:19px;width:19px;accent-color:var(--navy);flex-shrink:0}
+.speed-result{border:1px solid #d0dfd1;background:#f6fff8;border-radius:10px;padding:11px 13px;font-size:13px;line-height:1.9;margin-top:12px}
+.speed-note{font-size:12px;line-height:1.9;color:#5e6a75}
+.speed-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.speed-metrics .triad-item{box-shadow:none}
+@media(max-width:850px){.triad-grid,.speed-metrics{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.triad-grid,.speed-metrics{grid-template-columns:1fr}.triad-item p{min-height:0}}
+
+</style>
+</head>
+<body>
+<div class="app">
+<aside><div class="brand"><div class="logo">✒</div><div><strong>مِداد</strong><small>خطٌّ أجمل… يومًا بعد يوم</small></div></div>
+<nav class="nav" id="desktopNav"><button class="active" data-page="home">⌂ &nbsp; الرئيسية</button><button data-page="studio">✎ &nbsp; استوديو الكتابة</button><button data-page="plan">▤ &nbsp; خطتي التدريبية</button><button data-page="progress">◉ &nbsp; تقدمي</button></nav><div class="asidefoot">كل حرف تتقنينه… أثرٌ يبقى.<br><em>10 دقائق من التدريب الهادئ يوميًا.</em><br><span style="opacity:.7">البيانات محفوظة على هذا الجهاز فقط.</span></div></aside>
+<main>
+<div class="top"><div><div class="eyebrow">مِداد | تعلّم بخطوات متدرجة</div><h1 id="pageTitle">رحلتك إلى خط أجمل</h1><p id="pageSub">اكتبي، قارني، وتابعي تقدّمك.</p></div><div class="pill">✦ &nbsp; ثلاثة أهداف • مسار واحد</div></div>
+<section id="homePage">
+<div class="hero"><div><div style="font-size:13px;color:#ffe9ab;font-weight:700">مرحبًا بكِ في مِداد</div><h2>كل سطر تكتبينه اليوم،<br>يصنع فرقًا غدًا.</h2><p>تدرّبي على وضوح الحروف، وجمال تناسقها، وسرعة الكتابة المتّزنة؛ مع ملاحظة تطور كل مهارة على حدة.</p><div class="actions"><button class="btn gold" id="heroStart">ابدئي التدريب الآن ←</button><button class="btn" style="color:#fff;border-color:#ffffff65;background:transparent" data-go="plan">عرض برنامج 14 يومًا</button></div></div><div class="quill">✒</div></div>
+<div class="stats"><div class="stat"><small>التمارين المنجزة</small><strong id="statDone">٠</strong></div><div class="stat"><small>معدل تقييم خطك</small><strong id="statAvg">—</strong></div><div class="stat"><small>أيام الممارسة</small><strong id="statDays">٠</strong></div></div>
+<div class="triad-head"><h2>أهدافك التدريبية الثلاثة</h2><span class="sub">مؤشرات من تقييماتك الذاتية وتمارينك المؤقتة</span></div>
+<div class="triad-grid" id="triadHome"></div>
+<div class="phase-banner"><div><b>روتينك اليومي • ١٠ دقائق</b><p class="sub" id="dailyRoutine">ابدئي بالوضوح، ثم التناسق، وأخيرًا السرعة المتّزنة.</p></div><button class="btn gold" id="routineStart" type="button">ابدئي تدريب اليوم</button></div>
+<div class="grid2"><div class="card" style="margin-top:0"><div class="sectionTitle"><h2>تمرينك التالي</h2><span class="tag" id="nextCategory">التهيئة</span></div><div id="nextLesson"></div></div><div class="card" style="margin-top:0"><div class="sectionTitle"><h2>خطّتك لهذا اليوم</h2><span class="tag">14 يومًا</span></div><div id="homePlan"></div></div></div>
+<div class="card"><div class="sectionTitle"><h2>ابدئي من الأساس</h2><span class="sub">5 محطات لتنمية مهارة الكتابة</span></div><div class="lessons" id="homeCategories"></div></div>
+</section>
+<section id="studioPage" class="hide">
+<div class="grid2"><div><div class="card" style="margin-top:0"><div class="sectionTitle"><div><div class="eyebrow" id="exerciseCat"></div><h2 id="exerciseTitle"></h2></div><select id="exerciseSelect" aria-label="اختيار تمرين" style="max-width:190px;min-width:120px;background:white;border:1px solid var(--line);border-radius:10px;padding:8px;color:var(--navy)"></select></div><div class="phase-banner" id="studioPhase"><div><b id="studioFocusTitle">الوضوح والجمال والسرعة</b><p class="sub" id="studioFocusDetails"></p></div><span class="phase-label" id="studioFocusTag">التدرّج</span></div><div class="instruction"><strong>هدف التمرين</strong><span id="exerciseGoal"></span></div><div class="toolbar"><div class="tabs"><button id="traceBtn" class="on">تتبّع النموذج</button><button id="copyBtn">اكتب باستقلالية</button></div><div class="tags"><label class="field">النمط <select id="fontMode"><option value="naskh">النسخ</option><option value="ruqaa">الرقعة</option></select></label><label class="field">حجم <input aria-label="حجم النموذج" type="range" min="30" max="100" value="65" id="sizeInput"></label></div></div><div id="modelAbove" class="model hide"></div>
+<div class="workspace"><div class="canvasArea" id="canvasArea"><div class="ruleGuides" id="ruleGuides"></div><div class="guideText" id="guideText"></div><svg class="pattern" id="pattern" viewBox="0 0 950 370" preserveAspectRatio="none" aria-hidden="true"></svg><canvas class="draw" id="drawCanvas" aria-label="سطح التدريب على الكتابة بالقلم أو بالإصبع"></canvas></div><div class="boardFooter"><div class="tags"><label class="field">القلم <input id="colorPicker" type="color" value="#193a5c" aria-label="لون القلم"></label><label class="field">السماكة <input id="penSize" type="range" min="2" max="14" value="4" aria-label="سماكة القلم"></label><label class="field">شفافية النموذج <input id="opacityInput" type="range" min="10" max="65" value="25" aria-label="شفافية النموذج"></label></div><div class="tags"><button class="btn outline" id="penBtn" title="القلم">✎ قلم</button><button class="btn outline" id="eraserBtn" title="الممحاة">◻ ممحاة</button><button class="btn outline" id="undoBtn" title="تراجع">↶ تراجع</button></div></div></div>
+<div class="speed-box" id="speedBox" hidden>
+<div class="sectionTitle" style="margin-bottom:7px"><div><h3>⏱ تحدّي السرعة المتّزنة</h3><p class="sub">اكتبي النص كاملًا دون تتبّع، ثم سجّلي الوقت. تُقارن النتائج للنص نفسه فقط.</p></div><output class="speed-time" id="speedClock" aria-label="مدة الكتابة">00:00</output></div>
+<div class="actions"><button class="btn primary" id="speedStart" type="button">ابدئي التوقيت والكتابة</button><button class="btn outline" id="speedStop" type="button" disabled>إيقاف التوقيت</button><button class="btn outline" id="speedReset" type="button">إعادة التحدّي</button></div>
+<div id="speedConfirmArea" hidden><label class="speed-confirm"><input type="checkbox" id="speedFullText"/>أؤكد أنني كتبت النص المعروض كاملًا وأنه قابل للقراءة</label><div class="actions"><button class="btn gold" id="speedSave" type="button">تسجيل نتيجة السرعة</button></div></div>
+<div id="speedResult" class="speed-result" hidden></div>
+<p class="speed-note" style="margin-top:9px">لا يتحقق التطبيق آليًا من اكتمال النص أو جودته. ستظهر علامة «سرعة متّزنة» فقط بعد تقييمك الوضوح والجمال بمستوى ٤/٥ أو أكثر.</p>
+</div>
+<div class="actions"><button class="btn outline danger" id="clearBtn">مسح الكتابة</button><button class="btn outline" id="linesBtn">إخفاء السطور</button><button class="btn outline" id="exportBtn">تنزيل كتابتي PNG</button><button class="btn gold" id="completeBtn">قيّم هذه المحاولة ←</button></div></div>
+<div class="card" id="ratingCard" style="display:none"><div class="sectionTitle"><h2>تقييم ذاتي بعد التدريب</h2></div><p class="sub" style="margin-bottom:12px">اختاري من 1 إلى 5 في كل معيار، بناءً على مقارنتك بالنموذج.</p><div class="ratings" id="ratingRows"></div><div class="actions"><button class="btn primary" id="saveRating">حفظ التقييم والإنجاز</button><button class="btn outline" id="cancelRating">إلغاء</button></div><p class="sub" style="margin-top:12px">النتيجة تقييم ذاتي، وليست تحليلًا آليًا للخط.</p></div>
+</div>
+<div><div class="card asideTips" style="margin-top:0"><h2 style="font-size:18px">توجيهات المدرب</h2><ul id="exerciseTips"></ul></div><div class="card"><h2 style="font-size:18px;margin-bottom:16px">خطوات المحاولة</h2><div class="steps"><div class="step"><span class="num">١</span><div><strong>انظري</strong><p>تأمّلي شكل الحرف ومواضع الاتصال.</p></div></div><div class="step"><span class="num">٢</span><div><strong>تتبّعي</strong><p>اكتبي فوق النموذج الباهت ببطء.</p></div></div><div class="step"><span class="num">٣</span><div><strong>اكتبي مستقلةً</strong><p>اخفي النموذج وحاولي دون مساعدة.</p></div></div><div class="step"><span class="num">٤</span><div><strong>قارني وقيّمي</strong><p>حددي نقاط القوة وأهم ما ستطورينه.</p></div></div></div></div><div class="card"><h2 style="font-size:18px">خطوات تحسين الخط</h2><p class="sub" style="margin-top:12px">لا تعتمدي على سرعة الحركة في البداية. الأهم وضوح شكل الحرف وتساوي ارتفاعاته وتناسق وصلاته. ابدئي بالكتابة البطيئة ثم زيدي سرعتك تدريجيًا.</p><p class="sub" style="margin-top:11px">ملاحظة: النموذج الرقمي وسيلة إرشاد بصري، وليس بديلًا عن نموذج معتمد بخط اليد.</p></div></div></div></section>
+<section id="planPage" class="hide"><div class="card" style="margin-top:0"><div class="sectionTitle"><h2>برنامج 14 يومًا</h2><span class="tag">10 دقائق تقريبًا يوميًا</span></div><p class="sub">الأيام ١–٤ للوضوح، و٥–١٠ لجمال الحروف ووصلاتها، و١١–١٤ للكتابة الأكثر سرعة مع الحفاظ على الجودة. يُحتسب اليوم مكتملًا بعد تقييم تمريناته.</p><div class="progress"><i id="planBar" style="width:0%"></i></div><p class="sub" id="planSummary"></p></div><div class="card"><div class="daygrid" id="dayGrid"></div></div></section>
+<section id="progressPage" class="hide"><div class="stats"><div class="stat"><small>المحاولات المقيّمة</small><strong id="progressCount">٠</strong></div><div class="stat"><small>متوسط درجاتك / 5</small><strong id="progressAverage">—</strong></div><div class="stat"><small>دقائق كتابة مسجّلة</small><strong id="progressMinutes">٠</strong></div></div><div class="card"><div class="sectionTitle"><h2>تقدمي في الأهداف الثلاثة</h2><span class="sub">السرعة لا تُفسَّر وحدها دون وضوح وجمال</span></div><div id="triadProgress" class="speed-metrics"></div><div id="speedHistory" style="margin-top:15px"></div></div>
+<div class="grid2"><div class="card" style="margin-top:0"><div class="sectionTitle"><h2>كيف تغير تقييمك؟</h2></div><div id="chartArea"></div></div><div class="card" style="margin-top:0"><div class="sectionTitle"><h2>مهارات الكتابة</h2></div><div id="dimensionArea"></div></div></div><div class="card"><div class="sectionTitle"><h2>سجل التمارين</h2><button class="btn outline" id="clearStats" style="font-size:12px">إعادة ضبط سجل التقييمات</button></div><div id="history"></div></div></section>
+</main></div>
+<nav class="mobileNav" id="mobileNav"><button data-page="home" class="active"><span>⌂</span>الرئيسية</button><button data-page="studio"><span>✎</span>الكتابة</button><button data-page="plan"><span>▤</span>خطتي</button><button data-page="progress"><span>◉</span>تقدمي</button></nav>
+<div class="toast" id="toast"></div>
+<script>
+(()=>{'use strict';
+const CAT={control:'تهيئة التحكم بالقلم',letters:'الحروف المفردة',joins:'وصل الحروف',words:'الكلمات',sentences:'الجمل'};
+const DIMS=['وضوح الحروف','اتساق الحجم','التباعد والاتصال','مواضع النقاط'];
+const lesson=(id,cat,title,text,goal,tips,pattern)=>({id,cat,title,text,goal,tips:tips.split('|'),pattern});
+const EX=[
+lesson('c1','control','الخطوط الأفقية','','ارسمي خطوطًا أفقية متوازية من اليمين إلى اليسار.','حافظي على استقامة الخط.|اجعلي المسافات بين الخطوط متساوية.','h'),
+lesson('c2','control','الخطوط العمودية','','ارسمي خطوطًا عمودية ثابتة الطول مثل الألف.','ابدئي من الأعلى إلى الأسفل.|راقبي تساوي الأطوال.','v'),
+lesson('c3','control','الأقواس المنحنية','','ارسمي أقواسًا منحنية متساوية كأساس لحوض الباء والنون.','نفّذي كل قوس بحركة واحدة.|لا تضغطي بشدة على القلم.','curve'),
+lesson('c4','control','الدوائر الصغيرة','','ارسمي دوائر صغيرة مغلقة ومتقاربة في الحجم.','أغلقي رأس الدائرة بوضوح.|اتركي فراغات متساوية.','circle'),
+lesson('l1','letters','ألف ولام','ا    ل','تدرّبي على رسم الألف واللام بطول متناسق.','ابدئي من أعلى الحرف.|راقبي عمودية الخط وانضباطه.'),
+lesson('l2','letters','الباء والتاء والثاء','ب    ت    ث','ركزي على حوض الحرف ومواضع النقاط.','اجعلي الحوض متزنًا على السطر.|ميّزي عدد النقاط ومواضعها.'),
+lesson('l3','letters','الجيم والحاء والخاء','ج    ح    خ','تمرّني على القوس والجزء النازل تحت السطر.','حافظي على شكل الحوض.|تأكدي من موضع نقطة الجيم والخاء.'),
+lesson('l4','letters','الدال والذال والراء','د    ذ    ر    ز','ميّزي الأشكال القصيرة واتجاه نهاية الحرف.','راقبي ميل الجزء العلوي.|أضيفي النقطة بوضوح عند الحاجة.'),
+lesson('l5','letters','السين والشين','س    ش','تمرّني على انتظام أسنان السين وحجمها.','لا تجعلي أسنان السين متفاوتة جدًا.|وزّعي نقاط الشين بشكل منتظم.'),
+lesson('l6','letters','الصاد والضاد','ص    ض','لاحظي اتزان الصدر مع الحوض النهائي.','ابدئي بنموذج كبير ثم صغري تدريجيًا.|موضع نقطة الضاد مهم.'),
+lesson('l7','letters','العين والغين','ع    غ','تمرّني على فتحة العين وتحول شكلها.','أظهري فتحة الحرف بوضوح.|تأكدي من موضع نقطة الغين.'),
+lesson('l8','letters','الفاء والقاف','ف    ق','راقبي إغلاق رأس الحرف واتساق النقاط.','لا تكبري الرأس أكثر من اللازم.|حافظي على عدد النقاط الصحيح.'),
+lesson('l9','letters','الميم والنون','م    ن','تمرّني على الرأس والحوض والنقطة.','حددي موضع الحرف على السطر.|لا تُهملي نقطة النون.'),
+lesson('l10','letters','الهاء والواو والياء','ه    و    ي','قارني بين الدائرة والمنحنى والأشكال النهائية.','أغلقي رأس الواو.|راقبي امتداد الياء تحت السطر.'),
+lesson('j1','joins','وصل الباء','با    بي    بو','تمرّني على انتقال القلم بين الباء والأحرف التالية.','حافظي على اتصال الحروف.|لا تكبري البداية عن النهاية.'),
+lesson('j2','joins','وصل السين','سا    سم    سل','حافظي على وضوح أسنان السين مع الوصل.','اجعلي الوصل انسيابيًا.|احترمي شكل كل حرف بعد الاتصال.'),
+lesson('j3','joins','وصل الميم','ما    مي    مم','اكتبي الميم بأشكالها المتصلة مع حروف مختلفة.','راقبي دائرة الميم.|لا تنفصل الحروف التي يجب وصلها.'),
+lesson('j4','joins','وصل العين','عا    عل    عم','لاحظي اختلاف هيئة العين عند اتصالها.','ابدئي ببطء.|قارني بداية العين بوسطها.'),
+lesson('j5','joins','كلمات من وصلات','بيت    نور    قلم','اجمعي أكثر من مهارة وصل في كلمات بسيطة.','انتبهي للنقاط.|اجعلي الفراغ بين الكلمات واضحًا.'),
+lesson('w1','words','كلمة: علم','علم','اكتبي كلمة «علم» بارتفاعات متناسقة.','اللام أطول من العين والميم.|راقبي الاتصال بين الحروف.'),
+lesson('w2','words','كلمة: مدرسة','مدرسة','تدرّبي على كلمة تحتوي حروفًا متصلة وأخرى منفصلة.','اجعلي الراء واضحة.|احترمي موضع التاء المربوطة.'),
+lesson('w3','words','كلمة: نجاح','نجاح','تمرّني على اتساق الأشكال المنحنية والنقاط.','حافظي على نقطة النون.|راقبي هيئة الجيم والحاء.'),
+lesson('w4','words','كلمة: استدامة','استدامة','اكتبي كلمة أطول مع ضبط المسافات الداخلية.','راقبي حروف السين والتاء.|لا تضيّقي الكلمة في نهايتها.'),
+lesson('w5','words','كلمتان متوازنتان','تعلم مستدام','اضبطي حجم الكلمتين والمسافة بينهما.','افصلي بين الكلمتين بوضوح.|حافظي على خط أساس واحد.'),
+lesson('s1','sentences','جملة قصيرة','العلم نور','اكتبي جملة قصيرة على سطر واحد متوازن.','وحّدي ارتفاع الألفات واللامات.|راجعي وضوح المسافة بين الكلمتين.'),
+lesson('s2','sentences','الخط والممارسة','الخط الجميل يبدأ بالممارسة','تدرّبي على جملة يومية مع انضباط السطر.','اجعلي المسافات بين الكلمات متوازنة.|راجعي مواضع النقاط.'),
+lesson('s3','sentences','التعليم والأثر','التعليم يصنع الأثر','اكتبي جملة تركّز على الوصلات والامتداد.','حافظي على ميل واحد للحروف.|لا تتعجلي.'),
+lesson('s4','sentences','خطوة نحو الإتقان','كل يوم خطوة نحو الإتقان','انقلي مهارتك إلى جملة كاملة بخط واضح.','راقبي مستوى السطر من البداية للنهاية.|اختاري الكلمة التي تحتاج إعادة تدريب.')
+];
+const DAYS=Array.from({length:14},(_,i)=>EX.slice(i*2,i*2+2));
+const $=id=>document.getElementById(id);let state;try{state=JSON.parse(localStorage.getItem('midad_v1')||'{}')}catch{state={}};
+state.drawings=state.drawings||{};state.ratings=state.ratings||{};state.history=state.history||[];state.practice=state.practice||{};
+let page='home',exIndex=0,mode='trace',tool='pen',strokes=[],active=null,ratings=[0,0,0,0],lines=true,practiceMs=0,strokeStart=0,toastTimer=null;
+const ara=n=>String(n).replace(/[0-9]/g,x=>'٠١٢٣٤٥٦٧٨٩'[+x]);
+function save(){try{localStorage.setItem('midad_v1',JSON.stringify(state))}catch(e){notify('امتلأت مساحة الحفظ المحلية؛ جرّبي حذف محاولات قديمة.')}}
+function notify(t){$('toast').textContent=t;$('toast').classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('toast').classList.remove('show'),2900)}
+const avg=a=>a.reduce((x,y)=>x+y,0)/a.length;
+function currentEx(){return EX[exIndex]}
+function lessonIndex(id){return EX.findIndex(x=>x.id===id)}
+function assessedCount(){return EX.filter(x=>state.ratings[x.id]).length}
+function nextIndex(){const i=EX.findIndex(x=>!state.ratings[x.id]);return i<0?EX.length-1:i}
+function completedDays(){return DAYS.filter(xs=>xs.every(x=>state.ratings[x.id])).length}
+function practicedDays(){return Object.keys(state.practice).filter(x=>state.practice[x]>0).length}
+function score(){const xs=Object.values(state.ratings).map(x=>avg(x.values));return xs.length?avg(xs):null}
+function iconFor(cat){return {control:'〰',letters:'أ',joins:'ـ',words:'✍',sentences:'❝'}[cat]}
+function setPage(p){page=p;['home','studio','plan','progress'].forEach(x=>$(x+'Page').classList.toggle('hide',x!==p));document.querySelectorAll('[data-page]').forEach(b=>b.classList.toggle('active',b.dataset.page===p));const titles={home:['رحلتك إلى خط أجمل','اكتبي، قارني، وتابعي تقدّمك.'],studio:['استوديو تحسين الخط','مساحتك الخاصة للتجربة والتدريب.'],plan:['خطتي التدريبية','14 يومًا من خطوات الكتابة المتدرجة.'],progress:['لوحة تقدمي','تابعي تطور مهارتك بناءً على تقييماتك الذاتية.']};$('pageTitle').textContent=titles[p][0];$('pageSub').textContent=titles[p][1];if(p==='studio')renderStudio();else if(p==='home')renderHome();else if(p==='plan')renderPlan();else renderProgress();window.scrollTo({top:0,behavior:'instant'})}
+function goLesson(i){exIndex=Math.min(Math.max(i,0),EX.length-1);$('ratingCard').style.display='none';mode='trace';$('traceBtn').classList.add('on');$('copyBtn').classList.remove('on');setPage('studio')}
+function renderHome(){const a=score();$('statDone').textContent=ara(assessedCount())+' / '+ara(EX.length);$('statAvg').textContent=a===null?'—':ara(a.toFixed(1))+' / ٥';$('statDays').textContent=ara(practicedDays());const next=EX[nextIndex()];$('nextCategory').textContent=CAT[next.cat];$('nextLesson').innerHTML=`<div style="font-family:'Noto Naskh Arabic',serif;font-size:35px;min-height:56px;color:var(--navy)">${next.text||'〰 ── 〰'}</div><h3 style="font-size:19px">${next.title}</h3><p class="sub" style="margin:9px 0">${next.goal}</p><button class="btn primary" id="nextButton">ابدئي هذا التمرين ←</button>`;$('nextButton').onclick=()=>goLesson(nextIndex());const day=Math.min(14,DAYS.findIndex(xs=>xs.some(x=>!state.ratings[x.id]))+1||14);const complete=completedDays();$('homePlan').innerHTML=`<b>اليوم ${ara(day)} من ١٤</b><p class="sub" style="margin-top:6px">${DAYS[day-1].map(x=>x.title).join(' • ')}</p><div class="progress"><i style="width:${complete/14*100}%"></i></div><p class="sub">أكملتِ ${ara(complete)} من ١٤ يومًا</p>`;$('homeCategories').innerHTML=Object.entries(CAT).map(([cat,name])=>`<button class="lesson categoryButton" data-cat="${cat}" style="min-height:100px"><div style="font-size:25px;color:#b5851a">${iconFor(cat)}</div><b>${name}</b><span class="meta">${ara(EX.filter(x=>x.cat===cat&&state.ratings[x.id]).length)} / ${ara(EX.filter(x=>x.cat===cat).length)} تمارين</span></button>`).join('');document.querySelectorAll('.categoryButton').forEach(el=>el.onclick=()=>goLesson(EX.findIndex(x=>x.cat===el.dataset.cat)))}
+function patternSvg(p){let s='';const line=(path)=>`<path d="${path}" fill="none" stroke="#29435a" stroke-width="3" stroke-dasharray="9 9" opacity=".36" stroke-linecap="round"/>`;
+if(p==='h')for(let y=65;y<355;y+=67)s+=line(`M 115 ${y} L 840 ${y}`);
+if(p==='v')for(let x=120;x<900;x+=100)s+=line(`M ${x} 55 L ${x} 310`);
+if(p==='curve')for(let x=70;x<820;x+=150)s+=line(`M ${x} 142 Q ${x+70} 285 ${x+140} 142`);
+if(p==='circle')for(let y=115;y<370;y+=120)for(let x=90;x<880;x+=130)s+=`<circle cx="${x}" cy="${y}" r="37" fill="none" stroke="#29435a" stroke-width="3" stroke-dasharray="8 9" opacity=".34"/>`;
+return s}
+function renderStudio(){const e=currentEx();$('exerciseCat').textContent=CAT[e.cat]+' • التمرين '+ara(exIndex+1)+' / '+ara(EX.length);$('exerciseTitle').textContent=e.title;$('exerciseGoal').textContent=e.goal;$('exerciseTips').innerHTML=e.tips.map(t=>`<li>${t}</li>`).join('');$('exerciseSelect').innerHTML=EX.map((x,i)=>`<option value="${i}" ${i===exIndex?'selected':''}>${ara(i+1)}. ${x.title}</option>`).join('');$('guideText').textContent=e.text;$('modelAbove').textContent=e.text||'اتّبعي الخطوط الإرشادية';$('pattern').innerHTML=e.pattern?patternSvg(e.pattern):'';const tracing=mode==='trace';$('guideText').classList.toggle('hide',!tracing||!e.text);$('pattern').classList.toggle('hide',!tracing||!e.pattern);$('modelAbove').classList.toggle('hide',tracing);const ruq=$('fontMode').value==='ruqaa';$('guideText').classList.toggle('ruqaa',ruq);$('modelAbove').classList.toggle('ruqaa',ruq);$('guideText').style.fontSize=$('sizeInput').value+'px';$('guideText').style.opacity=String(+$('opacityInput').value/100);$('ruleGuides').classList.toggle('hide',!lines);strokes=structuredClone(state.drawings[e.id]||[]);active=null;resizeCanvas()}
+const cv=$('drawCanvas'),ctx=cv.getContext('2d');
+function resizeCanvas(){const r=cv.getBoundingClientRect();if(!r.width||!r.height)return;const dpr=Math.min(window.devicePixelRatio||1,3);cv.width=Math.round(r.width*dpr);cv.height=Math.round(r.height*dpr);ctx.setTransform(dpr,0,0,dpr,0,0);redraw()}
+function renderStroke(s,w,h){if(!s.points.length)return;ctx.save();if(s.tool==='eraser')ctx.globalCompositeOperation='destination-out';ctx.lineWidth=s.size;ctx.strokeStyle=s.color;ctx.fillStyle=s.tool==='eraser'?'#000':s.color;ctx.lineCap='round';ctx.lineJoin='round';ctx.beginPath();const p=s.points;ctx.moveTo(p[0][0]*w,p[0][1]*h);if(p.length===1){ctx.arc(p[0][0]*w,p[0][1]*h,s.size/2,0,Math.PI*2);ctx.fill()}else{for(let i=1;i<p.length;i++)ctx.lineTo(p[i][0]*w,p[i][1]*h);ctx.stroke()}ctx.restore()}
+function redraw(){const r=cv.getBoundingClientRect();if(!r.width)return;ctx.clearRect(0,0,r.width,r.height);strokes.forEach(s=>renderStroke(s,r.width,r.height));if(active)renderStroke(active,r.width,r.height)}
+function pos(ev){const r=cv.getBoundingClientRect();return [Math.max(0,Math.min(1,(ev.clientX-r.left)/r.width)),Math.max(0,Math.min(1,(ev.clientY-r.top)/r.height))]}
+function start(ev){if(ev.button!==undefined&&ev.button!==0&&ev.pointerType!=='pen')return;ev.preventDefault();cv.setPointerCapture(ev.pointerId);strokeStart=Date.now();active={tool,color:$('colorPicker').value,size:+$('penSize').value*(tool==='eraser'?4:1),points:[pos(ev)]};redraw()}
+function move(ev){if(!active)return;ev.preventDefault();const p=pos(ev),q=active.points.at(-1);if(Math.hypot(p[0]-q[0],p[1]-q[1])>.001){active.points.push(p);redraw()}}
+function finish(){if(!active)return;strokes.push(active);active=null;state.drawings[currentEx().id]=strokes;const day=new Date().toLocaleDateString('en-CA');state.practice[day]=(state.practice[day]||0)+Math.max(250,Date.now()-strokeStart)/60000;save();redraw()}
+cv.addEventListener('pointerdown',start);cv.addEventListener('pointermove',move);cv.addEventListener('pointerup',finish);cv.addEventListener('pointercancel',finish);
+function changeMode(m){mode=m;$('traceBtn').classList.toggle('on',mode==='trace');$('copyBtn').classList.toggle('on',mode==='copy');renderStudio()}
+$('traceBtn').onclick=()=>changeMode('trace');$('copyBtn').onclick=()=>changeMode('copy');$('exerciseSelect').onchange=e=>goLesson(+e.target.value);
+['fontMode','sizeInput','opacityInput'].forEach(id=>$(id).addEventListener('input',()=>{const ruq=$('fontMode').value==='ruqaa';$('guideText').classList.toggle('ruqaa',ruq);$('modelAbove').classList.toggle('ruqaa',ruq);$('guideText').style.fontSize=$('sizeInput').value+'px';$('guideText').style.opacity=String(+$('opacityInput').value/100)}));
+$('penBtn').onclick=()=>{tool='pen';$('penBtn').classList.add('soft');$('eraserBtn').classList.remove('soft')};$('eraserBtn').onclick=()=>{tool='eraser';$('eraserBtn').classList.add('soft');$('penBtn').classList.remove('soft')};$('penBtn').classList.add('soft');
+$('undoBtn').onclick=()=>{if(!strokes.length)return;strokes.pop();state.drawings[currentEx().id]=strokes;save();redraw()};
+$('clearBtn').onclick=()=>{if(!strokes.length)return;if(!confirm('هل تريدين مسح المحاولة الحالية؟'))return;strokes=[];state.drawings[currentEx().id]=[];save();redraw()};
+$('linesBtn').onclick=()=>{lines=!lines;$('ruleGuides').classList.toggle('hide',!lines);$('linesBtn').textContent=lines?'إخفاء السطور':'إظهار السطور'};
+$('exportBtn').onclick=()=>{const e=currentEx(),w=1100,h=440,out=document.createElement('canvas');out.width=w;out.height=h;const cc=out.getContext('2d');cc.fillStyle='#fffdf9';cc.fillRect(0,0,w,h);cc.strokeStyle='#d0dae2';cc.lineWidth=1;for(let y=90;y<440;y+=110){cc.beginPath();cc.moveTo(0,y);cc.lineTo(w,y);cc.stroke()}if(mode==='trace'&&e.text){cc.save();cc.globalAlpha=+$('opacityInput').value/100;cc.textAlign='center';cc.textBaseline='middle';cc.direction='rtl';cc.fillStyle='#213e60';cc.font=`${Math.round(+$('sizeInput').value*w/Math.max(400,cv.clientWidth))}px 'Noto Naskh Arabic',serif`;cc.fillText(e.text,w/2,h/2,w-55);cc.restore()}/* draw ink separately to preserve eraser */ const ink=document.createElement('canvas');ink.width=w;ink.height=h;const ic=ink.getContext('2d');strokes.forEach(s=>{ic.save();ic.globalCompositeOperation=s.tool==='eraser'?'destination-out':'source-over';ic.strokeStyle=s.color;ic.fillStyle=s.color;ic.lineCap='round';ic.lineJoin='round';ic.lineWidth=s.size*(w/Math.max(1,cv.clientWidth));ic.beginPath();const p=s.points;ic.moveTo(p[0][0]*w,p[0][1]*h);if(p.length===1){ic.arc(p[0][0]*w,p[0][1]*h,ic.lineWidth/2,0,Math.PI*2);ic.fill()}else{for(let i=1;i<p.length;i++)ic.lineTo(p[i][0]*w,p[i][1]*h);ic.stroke()}ic.restore()});cc.drawImage(ink,0,0);const a=document.createElement('a');a.download='مِداد-'+e.id+'.png';a.href=out.toDataURL('image/png');a.click();notify('تم تجهيز صورة كتابتك')};
+function showRating(){if(!strokes.some(s=>s.tool==='pen')){notify('اكتبي محاولة قصيرة أولًا ثم قيّميها.');return}ratings=state.ratings[currentEx().id]?.values.slice()||[0,0,0,0];$('ratingCard').style.display='block';renderRatings();$('ratingCard').scrollIntoView({behavior:'smooth',block:'nearest'})}
+function renderRatings(){$('ratingRows').innerHTML=DIMS.map((x,i)=>`<div class="rating"><b style="font-size:14px">${x}</b><div class="stars">${[1,2,3,4,5].map(n=>`<button aria-label="${x}: ${n} من 5" data-dim="${i}" data-val="${n}" class="${n<=ratings[i]?'selected':''}">${ara(n)}</button>`).join('')}</div></div>`).join('');$('ratingRows').querySelectorAll('button').forEach(b=>b.onclick=()=>{ratings[+b.dataset.dim]=+b.dataset.val;renderRatings()})}
+$('completeBtn').onclick=showRating;$('cancelRating').onclick=()=>$('ratingCard').style.display='none';$('saveRating').onclick=()=>{if(ratings.some(x=>!x)){notify('قيّمي المعايير الأربعة أولًا.');return}const e=currentEx(),time=new Date().toISOString();state.ratings[e.id]={values:[...ratings],at:time};state.history.push({id:e.id,values:[...ratings],at:time});save();$('ratingCard').style.display='none';notify('أحسنتِ! حُفظ تقييمك وتقدمك.');if(exIndex+1<EX.length)goLesson(exIndex+1);else setPage('progress')};
+function renderPlan(){$('planBar').style.width=completedDays()/14*100+'%';$('planSummary').textContent=`تم إنجاز ${ara(completedDays())} من ١٤ يومًا، و${ara(assessedCount())} من ${ara(EX.length)} تمرينًا.`;let pending=DAYS.findIndex(xs=>xs.some(x=>!state.ratings[x.id]));if(pending<0)pending=13;$('dayGrid').innerHTML=DAYS.map((less,i)=>{const complete=less.every(x=>state.ratings[x.id]);return `<button class="day ${complete?'complete':''} ${i===pending?'today':''}" data-day="${i}"><small>${complete?'✓ يوم مكتمل':i===pending?'◉ يوم التدريب الحالي':'برنامج التدريب'}</small><h3>اليوم ${ara(i+1)}</h3><div class="daymeta">${less.map(x=>x.title).join(' + ')}</div><div class="progress"><i style="width:${less.filter(x=>state.ratings[x.id]).length/less.length*100}%"></i></div><span class="sub">${ara(less.filter(x=>state.ratings[x.id]).length)} / ${ara(less.length)} تمارين</span></button>`}).join('');document.querySelectorAll('[data-day]').forEach(x=>x.onclick=()=>goLesson(EX.findIndex(e=>e.id===DAYS[+x.dataset.day].find(e=>!state.ratings[e.id])?.id)||DAYS[+x.dataset.day][0].id))}
+function renderProgress(){const hist=state.history,overall=score();$('progressCount').textContent=ara(hist.length);$('progressAverage').textContent=overall===null?'—':ara(overall.toFixed(1));$('progressMinutes').textContent=ara(Math.floor(Object.values(state.practice).reduce((a,b)=>a+b,0)));if(!hist.length){$('chartArea').innerHTML='<div class="empty">لا توجد تقييمات بعد. ابدئي بتمرين ثم قيّمي محاولتك لتظهر النتائج.</div>';$('dimensionArea').innerHTML='<div class="empty">تظهر مهاراتك هنا بعد أول تقييم.</div>';$('history').innerHTML='<div class="empty">سجلّك فارغ حاليًا.</div>';return}
+const recent=hist.slice(-12);$('chartArea').innerHTML='<div class="bargraph">'+recent.map((x,i)=>`<div class="barcol" title="${EX[lessonIndex(x.id)]?.title}: ${avg(x.values).toFixed(1)}"><span class="sub" style="font-size:10px">${ara(avg(x.values).toFixed(1))}</span><div class="bar" style="height:${avg(x.values)/5*115}px"></div><small>${ara(i+1)}</small></div>`).join('')+'</div><p class="sub" style="margin-top:12px">آخر '+ara(recent.length)+' تقييمات، من الأقدم إلى الأحدث.</p>';
+$('dimensionArea').innerHTML=DIMS.map((d,i)=>{const a=avg(hist.map(x=>x.values[i]));return `<div class="chartrow"><span>${d}</span><div class="progress"><i style="width:${a/5*100}%"></i></div><b>${ara(a.toFixed(1))}</b></div>`}).join('')+'<p class="sub" style="margin-top:10px">هذه الدرجات أدخلتِها بنفسك، ولا تمثّل تقييمًا آليًا للخط.</p>';
+$('history').innerHTML='<div style="display:grid;gap:10px">'+hist.slice(-15).reverse().map(x=>`<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 14px;border:1px solid var(--line);border-radius:11px"><div><b>${EX[lessonIndex(x.id)]?.title||x.id}</b><div class="sub">${new Date(x.at).toLocaleDateString('ar-OM')}</div></div><strong style="color:var(--navy)">${ara(avg(x.values).toFixed(1))} / ٥</strong></div>`).join('')+'</div>'}
+$('clearStats').onclick=()=>{if(!confirm('سيُحذف سجل التقييمات والتقدم، لكن ستبقى الرسومات. هل تريدين المتابعة؟'))return;state.ratings={};state.history=[];state.practice={};state.speedRuns=[];save();renderProgress();notify('أعيد ضبط سجلّ التقدم')};
+document.querySelectorAll('[data-page]').forEach(x=>x.onclick=()=>setPage(x.dataset.page));document.querySelectorAll('[data-go]').forEach(x=>x.onclick=()=>setPage(x.dataset.go));$('heroStart').onclick=()=>goLesson(nextIndex());
+
+// تخصيص متكامل لمسارات الوضوح والجمال والسرعة — مع المحافظة على بيانات الإصدار السابق.
+state.profile=state.profile||{};
+state.profile.goals=['clarity','beauty','speed'];
+state.speedRuns=Array.isArray(state.speedRuns)?state.speedRuns:[];
+try{localStorage.setItem('midad_v1',JSON.stringify(state))}catch{}
+function phaseFor(dayIndex){
+ if(dayIndex<=3)return {name:'الوضوح',detail:'ثبات حركة القلم • تحديد شكل الحروف • سلامة النقاط',routine:'٥ دقائق وضوح، ٣ دقائق محاكاة، دقيقتان مراجعة'};
+ if(dayIndex<=9)return {name:'الجمال',detail:'تناسق الارتفاعات • اتزان الوصلات • المسافات',routine:'٣ دقائق وضوح، ٥ دقائق تنسيق، دقيقتان مراجعة'};
+ return {name:'السرعة المتّزنة',detail:'حافظي على الوضوح والجمال بينما تقلّلين زمن كتابة الجملة',routine:'٣ دقائق وضوح، ٣ دقائق تناسق، ٤ دقائق تحدّي كتابة'};
+}
+function phaseForExercise(ex){let n=EX.findIndex(e=>e.id===ex.id);return phaseFor(Math.floor(n/2))}
+const metricAvg=(dims)=>state.history.length?avg(state.history.map(r=>avg(dims.map(i=>r.values[i])))):null;
+const readableScore=n=>n===null?'—':ara(n.toFixed(1))+' / ٥';
+const clarityOf=vals=>(vals[0]+vals[3])/2;
+const beautyOf=vals=>(vals[1]+vals[2])/2;
+function balancedRun(r){return Array.isArray(r.values)&&clarityOf(r.values)>=4&&beautyOf(r.values)>=4}
+function usableRuns(){return state.speedRuns.filter(r=>Number.isFinite(r.wpm)&&r.wpm>0&&r.seconds>=8&&EX.some(e=>e.id===r.id))}
+const scoreCard=(symbol,title,description,value,note)=>`<article class="triad-item"><div class="triad-top"><span class="triad-symbol">${symbol}</span><span class="tag">${title}</span></div><h3>${title}</h3><p>${description}</p><div class="triad-value">${value}</div><div class="triad-note">${note}</div></article>`;
+function threeCards(){
+ const c=metricAvg([0,3]),b=metricAvg([1,2]);
+ const all=usableRuns(),balanced=all.filter(balancedRun),last=balanced.at(-1);
+ return [
+ scoreCard('أ','الوضوح','تمييز الحروف ومواضع النقاط في كتابتك',readableScore(c),c===null?'يتضح بعد أول تقييم ذاتي':'متوسط الوضوح والنقاط من تقييماتك'),
+ scoreCard('✦','الجمال','تناسق أحجام الحروف والمسافات والوصلات',readableScore(b),b===null?'يتضح بعد أول تقييم ذاتي':'متوسط التناسق والتباعد من تقييماتك'),
+ scoreCard('⏱','السرعة المتّزنة','عدد الكلمات في الدقيقة مع تقييم وضوح وجمال لا يقل عن ٤ / ٥',last?ara(last.wpm.toFixed(1))+' <small>كلمة/دقيقة</small>':'—',last?'آخر تحدٍّ متّزن تم تقييمه':'قيسي الوقت في تمرين جملة ثم قيّميها')
+ ].join('');
+}
+const baseHome=renderHome;
+renderHome=function(){
+ baseHome();$('triadHome').innerHTML=threeCards();
+ const next=nextIndex(),phase=phaseFor(Math.floor(next/2));
+ $('dailyRoutine').textContent=`المرحلة الحالية: ${phase.name} • ${phase.routine}`;
+};
+const basePlan=renderPlan;
+renderPlan=function(){basePlan();document.querySelectorAll('[data-day]').forEach(el=>{
+ const p=phaseFor(+el.dataset.day);el.insertAdjacentHTML('afterbegin',`<span class="phase-label">مرحلة ${p.name}</span>`);
+ el.title=p.detail;
+});};
+const baseProgress=renderProgress;
+renderProgress=function(){
+ baseProgress();$('triadProgress').innerHTML=threeCards();
+ const all=usableRuns(),balanced=all.filter(balancedRun);
+ if(!all.length){$('speedHistory').innerHTML='<div class="empty">لا توجد محاولات سرعة حتى الآن. افتحي أحد تمارين الجمل، واكتبي النص كاملًا باستخدام المؤقّت، ثم قيّمي المحاولة.</div>';return}
+ $('speedHistory').innerHTML=`<h3 style="font-size:16px;margin-bottom:10px">سجل تحدّيات السرعة (${ara(all.length)})</h3><div style="display:grid;gap:10px">`+all.slice(-8).reverse().map(r=>{
+  const ex=EX.find(e=>e.id===r.id);const prior=all.filter(x=>x.id===r.id&&x.at<r.at),prev=prior.at(-1);
+  const diff=prev?` • الفرق عن محاولتك السابقة للنص نفسه: ${r.wpm>=prev.wpm?'+':''}${ara((r.wpm-prev.wpm).toFixed(1))}`:'';
+  return `<div style="border:1px solid var(--line);border-radius:12px;padding:13px"><b>${ex?.title||'تمرين'}</b><p class="sub">${new Date(r.at).toLocaleDateString('ar-OM')} • ${ara(r.seconds.toFixed(1))} ثانية</p><strong style="color:var(--navy)">${ara(r.wpm.toFixed(1))} كلمة/دقيقة</strong><span class="tag" style="margin-right:9px">${!r.values?'بانتظار التقييم':balancedRun(r)?'✓ سرعة متّزنة':'لم تحقق معيار الاتزان الذاتي'}</span><p class="sub">${diff||'تظهر المقارنة بعد إعادة كتابة النص نفسه'}</p></div>`;
+ }).join('')+`</div><p class="sub" style="margin-top:11px">${ara(balanced.length)} محاولات حققت معيار الاتزان بحسب تقييمك الذاتي؛ المعدّل الزمني مبني على إقرارك بإكمال النص.</p>`;
+};
+let speedStarted=0,speedTicker=null,speedSeconds=0,speedDraft=null,speedId=null;
+function clockFormat(n){const secs=Math.floor(n),mm=String(Math.floor(secs/60)).padStart(2,'0'),ss=String(secs%60).padStart(2,'0');return `${mm}:${ss}`}
+function stopTicker(){if(speedTicker!==null){clearInterval(speedTicker);speedTicker=null}}
+function resetSpeed(){stopTicker();speedStarted=0;speedSeconds=0;speedDraft=null;$('speedClock').textContent='00:00';$('speedStart').disabled=false;$('speedStop').disabled=true;$('speedConfirmArea').hidden=true;$('speedFullText').checked=false;$('speedResult').hidden=true}
+function speedEligible(e){return e.cat==='sentences'||e.id==='w5'}
+const baseStudio=renderStudio;
+renderStudio=function(){
+ const e=currentEx();if(speedId!==e.id){resetSpeed();speedId=e.id}
+ baseStudio();$('speedBox').hidden=!speedEligible(e);
+ const phase=phaseForExercise(e);$('studioFocusTitle').textContent='ركزي اليوم على '+phase.name;
+ $('studioFocusDetails').textContent=phase.detail;$('studioFocusTag').textContent=phase.routine;
+};
+$('speedStart').onclick=()=>{
+ const e=currentEx();if(!speedEligible(e))return;
+ if(strokes.length&&!confirm('لبدء تحدٍّ عادل، ستُمسح كتابة هذا التمرين الحالية (يمكنك الرجوع إلى تمرين آخر دون حذف بقية المحاولات). متابعة؟'))return;
+ // يبدأ التحدّي من ورقة نظيفة في وضع المحاكاة.
+ strokes=[];active=null;state.drawings[e.id]=[];save();mode='copy';$('traceBtn').classList.remove('on');$('copyBtn').classList.add('on');renderStudio();redraw();
+ speedSeconds=0;speedDraft=null;$('speedConfirmArea').hidden=true;$('speedResult').hidden=true;
+ speedStarted=performance.now();$('speedStart').disabled=true;$('speedStop').disabled=false;
+ speedTicker=setInterval(()=>{$('speedClock').textContent=clockFormat((performance.now()-speedStarted)/1000)},150);
+};
+$('speedStop').onclick=()=>{
+ if(!speedStarted)return;
+ speedSeconds=Math.round((performance.now()-speedStarted)/100)/10;stopTicker();speedStarted=0;
+ $('speedClock').textContent=clockFormat(speedSeconds);$('speedStart').disabled=false;$('speedStop').disabled=true;
+ if(speedSeconds<8){notify('اكتبي لمدة ثماني ثوانٍ على الأقل لقياس أكثر معنى.');return}
+ if(!strokes.some(s=>s.tool==='pen')){notify('لا توجد كتابة مسجّلة؛ ابدئي التحدّي من جديد.');return}
+ $('speedConfirmArea').hidden=false;$('speedFullText').checked=false;
+};
+$('speedReset').onclick=()=>{resetSpeed();notify('يمكنك بدء تحدٍّ جديد من البداية.')};
+$('speedSave').onclick=()=>{
+ if(!$('speedFullText').checked){notify('أكّدي اكتمال النص وإمكانية قراءته أولًا.');return}
+ if(speedSeconds<8||!strokes.some(s=>s.tool==='pen')){notify('يجب إكمال تحدّي كتابة أولًا.');return}
+ const e=currentEx(),words=e.text.trim().split(/\s+/).filter(Boolean).length,wpm=words*60/speedSeconds;
+ const run={id:e.id,seconds:speedSeconds,wpm,at:new Date().toISOString(),values:null};
+ state.speedRuns.push(run);save();speedDraft=run.at;$('speedConfirmArea').hidden=true;
+ $('speedResult').hidden=false;$('speedResult').textContent=`سُجّلت سرعة ${ara(wpm.toFixed(1))} كلمة/دقيقة خلال ${ara(speedSeconds.toFixed(1))} ثانية. قيّمي هذه المحاولة لتحديد إن كانت سرعة متّزنة.`;
+ notify('سُجّلت السرعة؛ قيّمي الآن الوضوح والجمال.');
+};
+const baseSaveRating=$('saveRating').onclick;
+$('saveRating').onclick=()=>{
+ const eId=currentEx().id,values=[...ratings],pending=speedDraft;
+ baseSaveRating();
+ if(values.every(n=>n>=1&&n<=5)&&pending){
+   const r=state.speedRuns.find(x=>x.id===eId&&x.at===pending&&!x.values);
+   if(r){r.values=values;save();}
+   speedDraft=null;
+ }
+};
+const prevClear=$('clearStats').onclick;
+$('clearStats').onclick=()=>{const before=state.history.length;prevClear();if(before>0&&state.history.length===0){state.speedRuns=[];save();renderProgress()}};
+$('routineStart').onclick=()=>goLesson(nextIndex());
+document.addEventListener('visibilitychange',()=>{if(document.hidden&&speedStarted){resetSpeed();notify('توقف التوقيت عند مغادرة التطبيق؛ ابدئي التحدّي مرة أخرى.')}});
+
+const ob=new ResizeObserver(()=>{if(page==='studio')resizeCanvas()});ob.observe($('canvasArea'));window.addEventListener('resize',()=>{if(page==='studio')resizeCanvas()});renderHome();
+})();
+</script>
+</body>
+</html>
